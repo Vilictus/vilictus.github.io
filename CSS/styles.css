@@ -1,0 +1,52 @@
+/* [[ ===== GOOGLE FONTS=====]] */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+/* [[ ===== UNIVERSAL CONFIGURATIONS =====]] */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --maindark: #121213;
+  --graymedium: #292929;
+  --maincolor: #005ae0;
+}
+
+body {
+  background-color: var(--maindark);
+}
+
+.Main {
+  display: flex;
+  font-family: 'Ubuntu', sans-serif;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: var(--maincolor);
+}
+
+#Textintro {
+  width: 170px;
+  animation: typing 1s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
